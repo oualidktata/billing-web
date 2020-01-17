@@ -35,7 +35,7 @@ const Typography = React.lazy(() => import('./views/Theme/Typography'));
 const Widgets = React.lazy(() => import('./views/Widgets/Widgets'));
 const Users = React.lazy(() => import('./views/Users/Users'));
 const User = React.lazy(() => import('./views/Users/User'));
-
+const ManageAccount= React.lazy(()=>import ("./views/Clients/Accounts/ManageAccount"));
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -79,6 +79,9 @@ const routes = [
   { path: '/charts', name: 'Charts', component: Charts },
   { path: '/users', exact: true,  name: 'Users', component: Users },
   { path: '/users/:id', exact: true, name: 'User Details', component: User },
+  {path:'/accounts',name:'Accounts', component:ManageAccount},
+  {path:'/accounts/manage',name:'Accounts', component:ManageAccount}
+
 ];
 
 export default routes;

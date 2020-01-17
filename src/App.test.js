@@ -7,3 +7,8 @@ it('mounts without crashing', () => {
   const wrapper = shallow(<App />);
   wrapper.unmount()
 });
+it('mounts without crashing2', () => {
+  const wrapper = shallow(<App />);
+  wrapper.unmount()
+});
+
